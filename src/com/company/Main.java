@@ -1,6 +1,7 @@
 package com.company;
 
 public class Main {
+    char[] alphabet = " ABCDEFGHIJKLMNOPQRSTUVXYZÆØÅ".toCharArray();
 
     public static void main(String[] args) {
 	char char1= ' ';
@@ -23,7 +24,6 @@ public class Main {
 
         letter = Character.toUpperCase(letter);
         int number=-1;
-        char[] alphabet = " ABCDEFGHIJKLMNOPQRSTUVXYZÆØÅ".toCharArray();
         for (int i = 0; i < alphabet.length; i++) {
         if(alphabet[i]==letter){
             return i;
@@ -53,7 +53,6 @@ public class Main {
         return number;
     }
     public char numberToLetter(int number){
-        char[] alphabet = " ABCDEFGHIJKLMNOPQRSTUVXYZÆØÅ".toCharArray();
         char letter = alphabet[number];
         return letter;
     }
